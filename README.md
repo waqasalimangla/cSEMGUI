@@ -53,8 +53,7 @@ csemapp::csem_gui_app()
 5. **Read the results** in the tabs that appear; copy tables to Word/Excel or download Excel files.
 
 <p align="center">
-  <img src="docs/images/model-<img width="1918" height="874" alt="model-builder" src="https://github.com/user-attachments/assets/60cf21ac-6661-4991-b953-1e2cf74878c1" />
-builder.png" width="900" alt="A PLS-SEM model built in the csemapp Model builder using the file mobi250.csv">
+  <img width="900" alt="model-builder" src="https://github.com/user-attachments/assets/54d47ce4-fdd0-4525-84b8-5bff09a9a1c2" />
   <br>
   <em>Example: a PLS-SEM model with seven constructs built entirely in the csemapp Model builder (data: <code>mobi250.csv</code>).</em>
 </p>
