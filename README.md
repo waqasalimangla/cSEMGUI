@@ -52,6 +52,12 @@ csemapp::csem_gui_app()
 4. **Calculate**: open the *Calculate* menu (top right) and pick an analysis.
 5. **Read the results** in the tabs that appear; copy tables to Word/Excel or download Excel files.
 
+<p align="center">
+  <img src="docs/images/model-builder.png" width="900" alt="A PLS-SEM model built in the csemapp Model builder using the file mobi250.csv">
+  <br>
+  <em>Example: a PLS-SEM model with seven constructs built entirely in the csemapp Model builder (data: <code>mobi250.csv</code>).</em>
+</p>
+
 ## Data requirements
 
 - CSV file with a header row, one column per indicator, numeric indicator columns
