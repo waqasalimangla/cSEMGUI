@@ -58,6 +58,12 @@ csemapp::csem_gui_app()
   <em>Example: a PLS-SEM model with seven constructs built entirely in the csemapp Model builder (data: <code>mobi250.csv</code>).</em>
 </p>
 
+<p align="center">
+  <img width="756" alt="Results diagram" src="https://github.com/user-attachments/assets/62ce8f42-861f-486c-8cca-6254e8817210" />
+  <br>
+  <em>Example: the results diagram after estimation, showing loadings, path coefficients and R².</em>
+</p>
+
 ## Data requirements
 
 - CSV file with a header row, one column per indicator, numeric indicator columns
