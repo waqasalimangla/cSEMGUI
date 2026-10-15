@@ -28,6 +28,15 @@ install.packages("path/to/csemapp", repos = NULL, type = "source")
 # or: remotes::install_local("path/to/csemapp")
 ```
 
+**Quick install from a downloaded `.tar.gz` (Windows example):**
+
+```r
+install.packages("C:/Users/YourName/Downloads/csemGUI.tar.gz", repos = NULL, type = "source")
+
+library(csemapp)
+run_csem_gui()
+```
+
 ## Usage
 
 ```r
