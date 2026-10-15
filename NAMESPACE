@@ -1,0 +1,5 @@
+# Hand-maintained to match the roxygen comments in R/ (run devtools::document() to regenerate)
+
+export(csem_gui_app)
+export(csem_gui_guide)
+export(run_csem_gui)

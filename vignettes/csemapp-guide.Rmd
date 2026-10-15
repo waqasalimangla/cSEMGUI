@@ -1,0 +1,78 @@
+---
+title: "Using csemapp: a point-and-click interface for PLS-SEM"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Using csemapp}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(eval = FALSE, collapse = TRUE, comment = "#>")
+```
+
+## What it is
+
+`csemapp` packages the **cSEM GUI**, a Shiny application for partial least
+squares structural equation modelling (PLS-SEM) built on the
+[cSEM](https://cran.r-project.org/package=cSEM) package. You draw the model on a
+canvas, choose an analysis, and read the results in report tables that can be
+copied to Word or Excel or downloaded as Excel workbooks.
+
+## Start the app
+
+```{r}
+library(csemapp)
+run_csem_gui()      # opens the app in your web browser
+csem_gui_guide()    # prints the full step-by-step guide to the console
+```
+
+To run it on a server (shiny-server, shinyapps.io, Posit Connect), create an
+`app.R` that contains:
+
+```{r}
+csemapp::csem_gui_app()
+```
+
+## A first analysis
+
+1. In the left panel tick **Use cSEM demo data (satisfaction)**, or upload your
+   own CSV file (header row, numeric indicators).
+2. Click **Load example model** (demo data) or drag variables onto the canvas to
+   create constructs, then use the **Connect** tool to draw paths.
+3. Open the **Calculate** menu, choose **PLS-SEM algorithm** and start.
+4. Read the **Results diagram** tab (loadings, path coefficients, R-square) and
+   the **cSEM report** tab (all tables).
+
+## Analyses in the Calculate menu
+
+| Menu item | What it does | Result tab |
+| --- | --- | --- |
+| PLS-SEM algorithm | PLS estimation | Results diagram, cSEM report |
+| Consistent PLS-SEM algorithm | PLSc: corrects common-factor constructs for measurement error | Results diagram, cSEM report |
+| Bootstrapping / consistent PLS bootstrapping | standard errors, t and p values, confidence intervals (parallel) | Bootstrapping report |
+| IPMA | importance-performance map for a target construct | IPMA |
+| Confirmatory tetrad analysis | tests a reflective measurement specification | Confirmatory tetrad analysis |
+| PLSpredict and CVPAT | k-fold out-of-sample prediction and predictive ability test | PLSpredict, CVPAT |
+
+Moderators and quadratic effects are added in the model builder. PLSpredict and
+CVPAT work for linear models only.
+
+## Reading the tables
+
+Report tables are coloured green when a common cut-off is met and red when it
+is not: loadings at least 0.70, reliability at least 0.70, AVE at least 0.50,
+HTMT below 0.90, VIF at most 5, SRMR below 0.08, NFI at least 0.90, and for
+PLSpredict Q2 predict above 0. Each table has a **Copy** button and each tab a
+**Download Excel** button.
+
+## More help
+
+`csem_gui_guide()` prints the complete guide: loading data, every model-builder
+shortcut, the settings of each analysis, the meaning of each table and a
+troubleshooting list.
+
+```{r}
+?run_csem_gui
+?csem_gui_guide
+```

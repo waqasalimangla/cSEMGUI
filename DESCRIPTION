@@ -1,0 +1,31 @@
+Package: csemapp
+Type: Package
+Title: A Point-and-Click Interface for PLS-SEM with 'cSEM'
+Version: 0.3.0
+Authors@R: person("Your", "Name", email = "wa274259@gmail.com", role = c("aut", "cre"))
+Description: Packages the 'cSEM GUI' Shiny application: an interactive drag-and-drop model
+    builder (moderators and quadratic effects included), partial least squares (PLS) and
+    consistent PLS estimation, parallel bootstrapping, importance-performance map analysis
+    (IPMA), confirmatory tetrad analysis (CTA), cross-validated out-of-sample prediction
+    (PLSpredict) with the cross-validated predictive ability test (CVPAT), a results diagram,
+    and cSEM-style reports that can be copied to 'Word'/'Excel' or exported as 'Excel'
+    workbooks. The application script is shipped unchanged in the package and started with
+    run_csem_gui().
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports:
+    cSEM,
+    jsonlite,
+    shiny,
+    utils,
+    writexl
+Suggests:
+    knitr,
+    parallel,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/YOUR-USERNAME/csemapp
+BugReports: https://github.com/YOUR-USERNAME/csemapp/issues
