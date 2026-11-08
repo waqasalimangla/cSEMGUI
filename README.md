@@ -74,15 +74,15 @@ csemapp::csem_gui_app()
 5. **Read the results** in the tabs that appear; copy tables to Word/Excel or download Excel files.
 
 <p align="center">
-  <img width="900" alt="model-builder" src="https://github.com/user-attachments/assets/54d47ce4-fdd0-4525-84b8-5bff09a9a1c2" />
+  <img width="708" height="398" alt="Model builder" src="https://github.com/user-attachments/assets/aae76581-d603-47f8-8adc-5d7455a89ab9" />
   <br>
-  <em>Example: a PLS-SEM model with seven constructs built entirely in the csemapp Model builder (data: <code>mobi250.csv</code>).</em>
+  <em>Example: a moderated mediation PLS-SEM model with four constructs (SAT, USAGE, CON and NHI) built in the csemapp Model builder (data: <code>ModeratedMediation.csv</code>, bundled with the package). NHI moderates the path SAT &rarr; USAGE.</em>
 </p>
 
 <p align="center">
-  <img width="756" alt="Results diagram" src="https://github.com/user-attachments/assets/62ce8f42-861f-486c-8cca-6254e8817210" />
+  <img width="684" height="418" alt="Results diagram" src="https://github.com/user-attachments/assets/1b4bb54d-7cdc-4b53-b6fc-7a91f4ff9a74" />
   <br>
-  <em>Example: the results diagram after estimation, showing loadings, path coefficients and R².</em>
+  <em>Example: the results diagram of the same four-construct model (data: <code>ModeratedMediation.csv</code>) after estimation, showing loadings, path coefficients, the NHI &times; SAT interaction effect and R&sup2;.</em>
 </p>
 
 ## Data requirements
