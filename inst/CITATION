@@ -1,0 +1,10 @@
+bibentry(
+  "Manual",
+  title  = "csemapp: A Point-and-Click Interface for PLS-SEM with 'cSEM'",
+  author = person("Waqas", "Ali"),
+  year   = "2026",
+  note   = paste("R package version", meta$Version),
+  url    = "https://github.com/waqasalimangla/cSEMGUI",
+  textVersion = paste0("Ali, W. (2026). csemapp: A Point-and-Click Interface for PLS-SEM with 'cSEM'. R package version ",
+                       meta$Version, ". https://github.com/waqasalimangla/cSEMGUI")
+)
