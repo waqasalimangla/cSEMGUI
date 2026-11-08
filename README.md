@@ -74,13 +74,13 @@ csemapp::csem_gui_app()
 5. **Read the results** in the tabs that appear; copy tables to Word/Excel or download Excel files.
 
 <p align="center">
-  <img width="708" height="398" alt="Model builder" src="https://github.com/user-attachments/assets/aae76581-d603-47f8-8adc-5d7455a89ab9" />
+  <img width="708" height="398" alt="Model builder" src="https://github.com/user-attachments/assets/e0c43911-9f68-4fcf-bffb-2a5874a27ba3" />
   <br>
   <em>Example: a moderated mediation PLS-SEM model with four constructs (SAT, USAGE, CON and NHI) built in the csemapp Model builder (data: <code>ModeratedMediation.csv</code>, bundled with the package). NHI moderates the path SAT &rarr; USAGE.</em>
 </p>
 
 <p align="center">
-  <img width="684" height="418" alt="Results diagram" src="https://github.com/user-attachments/assets/1b4bb54d-7cdc-4b53-b6fc-7a91f4ff9a74" />
+  <img width="684" height="418" alt="Results diagram" src="https://github.com/user-attachments/assets/22f7cbd7-8185-4f19-87c3-049619705efe" />
   <br>
   <em>Example: the results diagram of the same four-construct model (data: <code>ModeratedMediation.csv</code>) after estimation, showing loadings, path coefficients, the NHI &times; SAT interaction effect and R&sup2;.</em>
 </p>
